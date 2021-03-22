@@ -6,6 +6,8 @@ const db = require('./src/database')
 
 const PORT = process.env.PORT || 5000
 
+app.use(express.json());
+
 const app = express()
   .set('port', PORT)
   .set('views', path.join(__dirname, 'views'))
