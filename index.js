@@ -22,6 +22,7 @@ app.post('/api/contracts', function(req, res) {
   const data = {
     'status': 'OK'
   }
+  console.log(JSON.stringify(req.body, null, 2));
   res.send(data)
 })
 
