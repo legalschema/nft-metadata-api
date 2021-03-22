@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
   res.send('Get ready for OpenSea!');
 })
 
-app.post('/contract', function(req, res) {
+app.post('/api/contracts', function(req, res) {
   const data = {
     'status': 'OK'
   }
